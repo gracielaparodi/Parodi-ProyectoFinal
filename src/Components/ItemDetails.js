@@ -13,6 +13,8 @@ export default function ItemDetail({ producto }) {
                 <>
                     ID: {producto.id}
                     <br />
+                    FOTO: {producto.pictureUrl}
+                    <br />
                     PRODUCTO: {producto.name}
                     <br />
                     CATEGORIA: {producto.category}

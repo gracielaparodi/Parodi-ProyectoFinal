@@ -5,7 +5,7 @@ const CartWidget = () => {
     return ( 
     
         <div>
-            <a href="Cart"> <img src={ShoppingCart} alt="Carrito" width={35} /></a> <span style={{color:"white"}}>7</span>
+            <a href="Cart"> <img src={ShoppingCart} alt="Cart" width={35} /></a> <span style={{color:"white"}}>7</span>
         </div>
         );
     };

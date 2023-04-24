@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 
+
+
 export default function ItemCount({ ini, max, addItem }) {
     const [count, setCount] = useState(ini);
     function restar() {
@@ -22,6 +24,9 @@ export default function ItemCount({ ini, max, addItem }) {
             <button onClick={sumar}>+</button>
             <br />
             <button onClick={() => addItem(count)}>AGREGAR</button>
+            <br/>
+
+
         </div>
     );
 }

@@ -1,9 +1,11 @@
 
-import React from "react";
+import React  from "react";
 import ItemCount from "./ItemCount";
 
 
+
 export default function ItemDetail({ producto }) {
+
     function addItem(x) {
         alert("quiere agregar " + x + " de este item: " + producto.name);
     }
@@ -11,13 +13,9 @@ export default function ItemDetail({ producto }) {
         <div style={{ border: "2px solid pink", margin: "10px" }}>
             {producto.id ? (
                 <>
-                    ID: {producto.id}
+                    <img src={producto.pictureUrl} alt={producto.name} />
                     <br />
-                    FOTO: {producto.pictureUrl}
-                    <br />
-                    PRODUCTO: {producto.name}
-                    <br />
-                    CATEGORIA: {producto.category}
+                    {producto.name}
                     <br />
                     PRECIO: {producto.precio}
                     <br />
@@ -25,9 +23,15 @@ export default function ItemDetail({ producto }) {
                     <br />
                     <ItemCount ini={1} max={producto.stock} addItem={addItem} />
                 </>
+
+                
             ) : (
-                <>Loading...</>
+                <><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></>
             )}
+
+
         </div>
     );
+
+    
 }

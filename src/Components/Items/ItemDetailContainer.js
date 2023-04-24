@@ -23,7 +23,7 @@ export default function ItemDetailContainer({ greeting }) {
     }, [iditem]);
 
     return (
-        <div style={{ border: "2px solid black", margin: "10px" }}>
+        <div style={{ border: "2px solid pink", margin: "10px" }}>
             <ItemDetail producto={producto} />
         </div>
     );

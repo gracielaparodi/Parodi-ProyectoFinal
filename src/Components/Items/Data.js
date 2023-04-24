@@ -2,22 +2,23 @@ export const productosM = [
     {
         id: 1,
         name: "Sailor Moon 1",
-        pictureUrl: "https://i.ibb.co/kDLKYnd/manga1.jpg",
+        pictureUrl: "/img/manga1.jpg",
         category: "Manga",
         precio: 500,
         stock: 200,
     },
     {
         id: 2, name: "Sailor Moon 1 Deluxe ",
-        pictureUrl:"https://i.ibb.co/KwmKBP4/Manga-Deluxe.jpg" ,
+        pictureUrl:"/img/MangaDeluxe.jpg" ,
         category: "Manga",
         precio: 800,
         stock: 100
 
     },
     {
-        id: 3, name: "Sailor Moon Crystal ",
-        pictureUrl: "https://i.ibb.co/vddRZHs/Anume-Crystal.jpg",
+        id: 3, 
+        name: "Sailor Moon Crystal ",
+        pictureUrl: "/img/AnumeCrystal.jpg",
         category: "Anime",
         precio: 1000,
         stock: 80
@@ -25,7 +26,7 @@ export const productosM = [
     },
     {
         id: 3, name: "Sailor Moon",
-        pictureUrl:"https://i.ibb.co/hgC0bBP/Anime-Original.jpg",
+        pictureUrl:"/img/AnimeOriginal.jpg",
         category: "Anime",
         precio: 1000,
         stock: 75
@@ -33,8 +34,8 @@ export const productosM = [
     },
     {
         id: 5,
-        name: "Sailor Moon Transformation Pen",
-        pictureUrl: "https://i.ibb.co/pRb8rNp/pen.webp",
+        name: "Sailor Moon Transformation Pen and Broch",
+        pictureUrl: "/img/pen.jpg",
         category: "Merch",
         precio: 200,
         stock: 60
@@ -44,7 +45,7 @@ export const productosM = [
     {
         id: 6,
         name: "Sailor Moon Compact",
-        pictureUrl: "https://i.ibb.co/BZr3sr1/compact.webp",
+        pictureUrl: "/img/compact.jpg",
         category: "Merch",
         precio: 600,    
         stock: 50

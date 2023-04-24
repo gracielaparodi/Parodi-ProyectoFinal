@@ -5,10 +5,11 @@ import "./ItemListContainer";
 import { productosM } from "./Data";
 import ItemList from "./ItemList";
 
+
 export default function ItemListContainer({ Bienvenidos }) {
     const { idcategory } = useParams();
 
-    const [productos, setProductos] = useState([]);
+    const [Productos, setProductos] = useState([]);
 
     useEffect(() => {
         const productosPromise = new Promise((res, rej) => {
@@ -28,7 +29,7 @@ export default function ItemListContainer({ Bienvenidos }) {
 
     return (
         <div style={{ border: "2px solid pink", margin: "10px" }}>
-            <ItemList productos={productos} />
+            <ItemList Productos={Productos} />
         </div>
     );
 }

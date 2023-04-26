@@ -1,19 +1,18 @@
 import React from 'react'
 import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import compact from '../../Components/Assets/Imagenes/compact.webp'
 import latas from '../../Components/Assets/Imagenes/latas.webp'
 import pen from '../../Components/Assets/Imagenes/pen.webp'
 import mj1 from '../../Components/Assets/Imagenes/mj1.jpg'
+import { Link } from "react-router-dom";
 
+export default function HomePage  () {
 
-export default function HomePage() {
-    
-    return (
-        <div> 
-          <h2>Moon Store</h2>
+      return (
+        <div className='backgroundhome'> 
+          <h1>Moon Store</h1>
             <p>
                 Aca podes encontrar los mejores productos sobre Sailor Moon
             </p>
@@ -21,12 +20,11 @@ export default function HomePage() {
             <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={compact} />
       <Card.Body>
-        <Card.Title>Compact</Card.Title>
+        <Card.Title>Crisis Moon Compact</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Crisis Moon Compact. Broche tipo polvera de Sailor Moon.
         </Card.Text>
-        <Button variant="primary">AGREGAR AL CARRITO</Button>
+        <button ><Link className="link"  to={"/item/"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -34,21 +32,19 @@ export default function HomePage() {
       <Card.Body>
         <Card.Title>Lata Sailor Moon</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Bebida gasificada sabor Pomelo de Sailor Moon.
         </Card.Text>
-        <Button variant="primary">AGREGAR AL CARRITO</Button>
+        <button><Link className="link" to={"/item/"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={pen} />
       <Card.Body>
-        <Card.Title>Transformation Pen</Card.Title>
+        <Card.Title>Broch and Transformation Pen</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Broche y boligrafo de Transformacion de Sailor Moon.
         </Card.Text>
-        <Button variant="primary">AGREGAR AL CARRITO</Button>
+        <button><Link className="link" to={"/item/"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -56,10 +52,9 @@ export default function HomePage() {
       <Card.Body>
         <Card.Title>Sailor Moon Statue</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         Sailor Moon Eternal statue of Sailor Moon in FiguartsZERO collection.
         </Card.Text>
-        <Button variant="primary">AGREGAR AL CARRITO</Button>
+        <button><Link className="link" to={"/item/"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
  </div>

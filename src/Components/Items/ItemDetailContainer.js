@@ -4,12 +4,14 @@ import { useParams } from "react-router-dom";
 import { productosM } from "./Data";
 import ItemDetail from "./ItemDetails";
 
+
 export default function ItemDetailContainer({ greeting }) {
     const { iditem } = useParams();
 
     const [producto, setProducto] = useState({});
     
     useEffect(() => {
+        
         const productoPromise = new Promise((res, rej) => {
             setTimeout(() => {
                 res(productosM.find((item) => item.id === parseInt(iditem)));

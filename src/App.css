@@ -20,19 +20,18 @@ footer {
   transform: scale(1.5);
 }
 
-h2 {
-  color: #CD6F99;
-  text-align: center;
-}
 
-p {
-  text-align: center;
-}
 
 /*Redes*/
 .App-logo {
   margin: 10px;
 }
+.silhoette2 {margin:10px;
+  text-align: left;
+  padding-bottom: 10px;
+  float: left;;}
+
+
 
 /*Grid Cards*/
 
@@ -165,7 +164,22 @@ button:hover {
   }
 }
 
+/*Fonts*/
+
+h1 {color: #CD6F99;
+text-align: center;}
+
+h2 {
+  color: #CD6F99;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
 
 
+/*Background*/
 
-
+.backgroundhome {background-image: url(https://firebasestorage.googleapis.com/v0/b/smoon-store.appspot.com/o/background2.jpg?alt=media&token=81ca4f8c-05b5-4323-850e-ad0263d957ec);
+position: sticky;}

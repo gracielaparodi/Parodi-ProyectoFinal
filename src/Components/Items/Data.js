@@ -50,4 +50,30 @@ export const productosM = [
         precio: 600,    
         stock: 50
     },
+
+    {
+        id: 7,
+        name: "Sailor Moon Figure",
+        pictureUrl: "/img/mj1.jpg",
+        category: "Merch",
+        precio: 500,    
+        stock: 60
+    },
+    {
+        id: 8, 
+        name: "Sailor Moon R",
+        pictureUrl:"/img/AnimeOriginal2.jpg",
+        category: "Anime",
+        precio: 1000,
+        stock: 65
+    },
+
+    {
+        id: 9,
+        name: "Sailor Moon V",
+        pictureUrl: "/img/sailorv.jpg",
+        category: "Manga",
+        precio: 500,
+        stock: 100,
+    },
 ];

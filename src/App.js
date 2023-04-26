@@ -6,6 +6,8 @@ import ItemDetailContainer from "./Components/Items/ItemDetailContainer"
 import Header from "./Components/Header";
 import HomePage from "./Components/Pages/HomePage";
 import Cart from "./Components/Cart/Cart"
+import Login from "./Components/Pages/Login"
+import Register from "./Components/Pages/Register"
 
 
 
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/item/:iditem" element={<ItemDetailContainer />} />
           <Route path="/category/:idcategory" element={<ItemListContainer />} />
           <Route path="/category/Cart" element={<Cart />} />
+          <Route path="/category/Login" element={<Login />} />
+          <Route path="/category/Register" element={<Register />} />
 
                 </Routes>
       <Footer />

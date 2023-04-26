@@ -1,13 +1,12 @@
-
 import React  from "react";
 import ItemCount from "./ItemCount";
+
 
 
 
 export default function ItemDetail({ producto }) {
 
     function addItem(x) {
-        alert("quiere agregar " + x + " de este item: " + producto.name);
     }
     return (
         <div style={{ border: "2px solid pink", margin: "10px" }}>
@@ -33,5 +32,4 @@ export default function ItemDetail({ producto }) {
         </div>
     );
 
-    
-}
+            }

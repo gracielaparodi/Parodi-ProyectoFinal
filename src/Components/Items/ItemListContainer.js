@@ -9,7 +9,7 @@ import ItemList from "./ItemList";
 export default function ItemListContainer({ Bienvenidos }) {
     const { idcategory } = useParams();
 
-    const [Productos, setProductos] = useState([]);
+    const [Items, setItems] = useState([]);
 
     useEffect(() => {
         const productosPromise = new Promise((res, rej) => {
@@ -20,16 +20,16 @@ export default function ItemListContainer({ Bienvenidos }) {
 
         productosPromise.then((res) => {
             if (idcategory) {
-                setProductos(res.filter((item) => item.category === idcategory));
+                setItems(res.filter((item) => item.category === idcategory));
             } else {
-                setProductos(res);
+                setItems(res);
             }
         });
     }, [idcategory]);
 
     return (
         <div style={{ border: "2px solid pink", margin: "10px" }}>
-            <ItemList Productos={Productos} />
+            <ItemList Items={Items} />
         </div>
     );
 }

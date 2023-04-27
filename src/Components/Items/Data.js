@@ -76,4 +76,13 @@ export const productosM = [
         precio: 500,
         stock: 100,
     },
+
+    {
+        id: 10,
+        name: "Lata Sailor Moon",
+        pictureUrl: "/img/latas.jpg",
+        category: "Merch",
+        precio: 10,
+        stock: 50,
+    },
 ];

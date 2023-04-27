@@ -17,7 +17,7 @@ const Checkout = () => {
             items: cart.map(item => ({id:item.id, name:item.name, precio:item.precio, stock:item.stock, price_total:item.stock * item.precio})),
             date: `${fecha.getDate()}-${fecha.getMonth()+1}-${fecha.getFullYear()} ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`,
             total: sumTotal(),
-            stock: cartTotal()
+            quantity: cartTotal()
         };
 
         const db = getFirestore();
@@ -45,7 +45,7 @@ const Checkout = () => {
                             <label htmlFor="telefono" className="form-label">Teléfono</label>
                             <input type="text" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
-                        <button type="button" onClick={generarOrden} className="btn fondoRosa">Generar Orden</button>
+                        <button type="button" onClick={generarOrden} className="botoncart">Generar Orden</button>
                     </form>
                 </div>
                 <div className="col">
@@ -55,8 +55,8 @@ const Checkout = () => {
                                 <tr key={item.id}>
                                     <td><img src={item.pictureUrl} alt={item.name} width={64} /></td>
                                     <td className="align-middle">{item.name}</td>
-                                    <td className="text-center align-middle">{item.stock}</td>
-                                    <td className="text-center align-middle">${item.stock * item.precio}</td>
+                                    <td className="text-center align-middle">{item.quantity}</td>
+                                    <td className="text-center align-middle">${item.quantity * item.precio}</td>
                                 </tr>
                             ))}
                             <tr>
@@ -69,7 +69,7 @@ const Checkout = () => {
             </div>
             <div className="row my-5">
                 <div className="col text-center">
-                    {orderId ? <Navigate to={"/thankyou/" + orderId} /> : ""}
+                    {orderId ? <Navigate to={"/thanks/" + orderId} /> : ""}
                 </div>
             </div>
         </div>

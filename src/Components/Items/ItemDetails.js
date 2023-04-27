@@ -6,8 +6,7 @@ import ItemCount from "./ItemCount";
 
 export default function ItemDetail({ producto }) {
 
-    function addItem(x) {
-    }
+   
     return (
         <div style={{ border: "2px solid pink", margin: "10px" }}>
             {producto.id ? (
@@ -20,12 +19,12 @@ export default function ItemDetail({ producto }) {
                     <br />
                     STOCK: {producto.stock}
                     <br />
-                    <ItemCount ini={1} max={producto.stock} addItem={addItem} />
+                    <ItemCount ini={1} max={producto.stock} producto={producto} />
                 </>
 
                 
             ) : (
-                <><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></>
+                <><div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></>
             )}
 
 

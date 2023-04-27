@@ -12,7 +12,7 @@ const Thanks = () => {
                         <h1>Gracias por tu Compra!</h1>
                         <p>Tu Número de Compra es: <b>{id}</b></p>
                     </div>
-                    <Link to={"/"} className="button">Volver a la Página Principal</Link>
+                    <button className="botoncart"><Link className="botoncart" to={"/"}>Volver a la Página Principal</Link></button>
                 </div>
             </div>
         </div>

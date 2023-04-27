@@ -1,13 +1,15 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import {productosM} from "../Items/Data"
+import { CartContext } from "../Cart/CartContext";
 
-export default function ItemCount({ ini, max, stock, onAdd}) {
-    const [itemStock, setItemStock] = useState(stock);
+export default function ItemCount({ ini, max, producto}) {
+    const [itemStock, setItemStock] = useState(productosM);
     const [vendido, setVendido] = useState(false);
-    
-
     const [count, setCount] = useState(ini);
+    const {addItem} = useContext(CartContext);
+
     function restar() {
         if (count >= 2) {
             setCount(count - 1);
@@ -20,16 +22,16 @@ export default function ItemCount({ ini, max, stock, onAdd}) {
         }
     }
 
-    const addToCart = (quantity) => {
-        setItemStock(itemStock - quantity);
+    const addToCart = () => {
+        setItemStock(itemStock - productosM);
         setCount(1);
         setVendido(true);
-        onAdd(quantity);
+        addItem(producto, count);
     }
 
     useEffect(() => {
-        setItemStock(stock);
-    }, [stock])
+        setItemStock(productosM);
+    }, [])
 
 
     return (
@@ -38,7 +40,7 @@ export default function ItemCount({ ini, max, stock, onAdd}) {
             {count}
             <button onClick={sumar}>+</button>
             <br />
-            {vendido ? <button><Link className="link" to={"/Cart"}>Terminar Mi Compra</Link></button> : <button onClick={() => {addToCart(count)}}>Agregar al Carrito</button>}
+            {vendido ? <button><Link className="link" to={"/category/Cart"}>Terminar Mi Compra</Link></button> : <button onClick={() => {addToCart(count)}}>Agregar al Carrito</button>}
             <br/>
 
 

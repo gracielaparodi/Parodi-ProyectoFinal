@@ -33,7 +33,7 @@ const NavBar = ({color}) => {
                     </Nav> 
                    
                     <Form className="d-flex">
-                    <Nav.Link as={Link} to="/Cart"> <img class="carrito" src={ShoppingCart} width={40}  alt="Cart" /></Nav.Link>
+                    <Nav.Link as={Link} to="/category/Cart"> <img className="carrito" src={ShoppingCart} width={40}  alt="Cart" /></Nav.Link>
                          <Form.Control
                             type="search"
                             placeholder="Buscar"

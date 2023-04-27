@@ -183,3 +183,18 @@ p {
 
 .backgroundhome {background-image: url(https://firebasestorage.googleapis.com/v0/b/smoon-store.appspot.com/o/background2.jpg?alt=media&token=81ca4f8c-05b5-4323-850e-ad0263d957ec);
 position: sticky;}
+
+.botoncart {
+  text-decoration: none;
+  color: white;
+}
+
+
+.botoncart:hover {
+  cursor: pointer;
+  background-color: lavenderblush;
+  text-decoration: none;
+  color: #CD6F99;
+}
+
+.deleteboton {margin-right: 10px;}

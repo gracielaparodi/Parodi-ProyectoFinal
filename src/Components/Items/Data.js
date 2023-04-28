@@ -6,13 +6,15 @@ export const productosM = [
         category: "Manga",
         precio: 500,
         stock: 200,
+        description: "Tomo 1 de Sailor Moon",
     },
     {
         id: 2, name: "Sailor Moon 1 Deluxe ",
         pictureUrl:"/img/MangaDeluxe.jpg" ,
         category: "Manga",
         precio: 800,
-        stock: 100
+        stock: 100,
+        description: "Tomo 1 de Sailor Moon Deluxe",
 
     },
     {
@@ -21,7 +23,8 @@ export const productosM = [
         pictureUrl: "/img/AnumeCrystal.jpg",
         category: "Anime",
         precio: 1000,
-        stock: 80
+        stock: 80,
+        description: "Temporada 1 de Sailor Moon Crystal",
 
     },
     {
@@ -29,7 +32,8 @@ export const productosM = [
         pictureUrl:"/img/AnimeOriginal.jpg",
         category: "Anime",
         precio: 1000,
-        stock: 75
+        stock: 75,
+        description: "Temporada 1 de Sailor Moon clasico",
 
     },
     {
@@ -38,7 +42,8 @@ export const productosM = [
         pictureUrl: "/img/pen.jpg",
         category: "Merch",
         precio: 200,
-        stock: 60
+        stock: 60,
+        description: "Broche y lapicera de transformacion de Sailor Moon",
 
     },
 
@@ -48,7 +53,9 @@ export const productosM = [
         pictureUrl: "/img/compact.jpg",
         category: "Merch",
         precio: 600,    
-        stock: 50
+        stock: 50,
+        description: "Crisis Moon Compact. Broche tipo polvera de Sailor Moon",
+
     },
 
     {
@@ -57,7 +64,9 @@ export const productosM = [
         pictureUrl: "/img/mj1.jpg",
         category: "Merch",
         precio: 500,    
-        stock: 60
+        stock: 60,
+        description: "Sailor Moon Eternal statue of Sailor Moon in FiguartsZERO collection",
+
     },
     {
         id: 8, 
@@ -65,7 +74,9 @@ export const productosM = [
         pictureUrl:"/img/AnimeOriginal2.jpg",
         category: "Anime",
         precio: 1000,
-        stock: 65
+        stock: 65,
+        description: "Temporada 2 de Sailor Moon clasico",
+
     },
 
     {
@@ -75,6 +86,9 @@ export const productosM = [
         category: "Manga",
         precio: 500,
         stock: 100,
+        description: "Tomo 1 de Sailor V",
+
+
     },
 
     {
@@ -84,5 +98,6 @@ export const productosM = [
         category: "Merch",
         precio: 10,
         stock: 50,
+        description: "Bebida gasificada sabor Pomelo de Sailor Moon",
     },
 ];

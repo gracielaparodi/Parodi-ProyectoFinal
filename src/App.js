@@ -8,9 +8,11 @@ import HomePage from "./Components/Pages/HomePage";
 import Cart from "./Components/Cart/Cart"
 import Login from "./Components/Pages/Login"
 import Register from "./Components/Pages/Register"
+import Error404 from "./Components/Cart/Error404";
 import CartContextProvider from "./Components/Cart/CartContext";
 import Checkout from "./Components/Cart/Checkout";
 import Thanks from "./Components/Cart/Thanks";
+
 
 
 
@@ -33,6 +35,7 @@ export default function App() {
           <Route path="/category/Cart" element={<Cart />} />
           <Route path="/category/Login" element={<Login />} />
           <Route path="/category/Register" element={<Register />} />
+          <Route path={"*"} element={<Error404 />} />
           <Route path={"/checkout"} element={<Checkout />} />
           <Route path={"/thanks/:id"} element={<Thanks />} />
 

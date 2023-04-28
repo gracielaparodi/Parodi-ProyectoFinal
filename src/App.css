@@ -26,6 +26,14 @@ footer {
 .App-logo {
   margin: 10px;
 }
+
+.App-logo:hover {
+
+  filter: opacity(0.9);
+  transform: scale(1.1);
+}
+
+
 .silhoette2 {margin:10px;
   text-align: left;
   padding-bottom: 10px;
@@ -173,6 +181,10 @@ h2 {
   color: #CD6F99;
   text-align: center;
 }
+h3 {
+  color: #9d5575;
+  text-align: center;
+}
 
 p {
   text-align: center;
@@ -198,3 +210,7 @@ position: sticky;}
 }
 
 .deleteboton {margin-right: 10px;}
+
+
+
+

@@ -24,7 +24,7 @@ export default function HomePage  () {
         <Card.Text>
         Crisis Moon Compact. Broche tipo polvera de Sailor Moon.
         </Card.Text>
-        <button ><Link className="link"  to={"/item/6"}>DETALLES</Link></button>
+        <button ><Link className="link"  to={"/item/ayurj3PmLItHIiztPFWk"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -34,7 +34,7 @@ export default function HomePage  () {
         <Card.Text>
           Bebida gasificada sabor Pomelo de Sailor Moon.
         </Card.Text>
-        <button><Link className="link" to={"/item/10"}>DETALLES</Link></button>
+        <button><Link className="link" to={"/item/IY1YyXW2NTvtEjUigAKh"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -44,7 +44,7 @@ export default function HomePage  () {
         <Card.Text>
         Broche y boligrafo de Transformacion de Sailor Moon.
         </Card.Text>
-        <button><Link className="link" to={"/item/5"}>DETALLES</Link></button>
+        <button><Link className="link" to={"/item/guHynU8nA0y4QDLZ2g6K"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -54,7 +54,7 @@ export default function HomePage  () {
         <Card.Text>
          Sailor Moon Eternal statue of Sailor Moon in FiguartsZERO collection.
         </Card.Text>
-        <button><Link className="link" to={"/item/7"}>DETALLES</Link></button>
+        <button><Link className="link" to={"/item/xsmXfVd7823SWwg4EZhB"}>DETALLES</Link></button>
       </Card.Body>
     </Card>
  </div>

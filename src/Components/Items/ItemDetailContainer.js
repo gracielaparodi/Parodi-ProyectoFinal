@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { productosM } from "./Data";
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
 import ItemDetail from "./ItemDetails";
 
 
@@ -11,18 +11,14 @@ export default function ItemDetailContainer({ greeting }) {
     const [producto, setProducto] = useState({});
     
     useEffect(() => {
-        
-        const productoPromise = new Promise((res, rej) => {
-            setTimeout(() => {
-                res(productosM.find((item) => item.id === parseInt(iditem)));
-            }, 2000);
+        const db = getFirestore();
+    
+        let docSinNorm = doc(db, 'Productos', iditem);
+    
+        getDoc(docSinNorm).then((item) => {
+          setProducto({ id: item.id, ...item.data() });
         });
-
-        productoPromise.then((res) => {
-            console.log(res)
-            setProducto(res);
-        });
-    }, [iditem]);
+      }, [iditem]);
 
     return (
         <div style={{ border: "2px solid pink", margin: "10px" }}>

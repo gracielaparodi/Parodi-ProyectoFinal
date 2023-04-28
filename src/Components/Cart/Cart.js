@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import {CartContext} from "../Cart/CartContext";
 import { Link } from "react-router-dom";
 import DeleteProduct from '../Assets/Imagenes/delete-product.png';
+import logo from '../Assets/Imagenes/logo.png';
 
 
 const Cart = () => {
@@ -13,7 +14,7 @@ const Cart = () => {
                 <div className="container-fluid row">
                     <div className="container-fluid col-md-12 text-center">
                         <div className="alert alert-danger" role="alert">No se encontraron Productos en el Carrito!</div>
-                        <button><Link to={"/"} className="botoncart">Volver a la Página Principal</Link></button>
+                        <Link to={"/"} ><img src={logo} className="App-logo" alt="logo" width={50} /></Link>
                     </div>
                 </div>
             </div>

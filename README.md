@@ -31,8 +31,7 @@ To run tests, run the following command
 
 ## DEMO
 
-{web}
-
+https://smoonstore.netlify.app/
 
 
 - 👨‍💻 All of my projects are available at [https://github.com/gracielaparodi](https://github.com/gracielaparodi)

@@ -27,7 +27,7 @@ export default function ItemListContainer({ Bienvenidos }) {
       console.log(res.docs);
 
       const arrayNorm = res.docs.map((element) => {
-        return { id: element.id, name: element.data().name, category: element.data().category, precio: element.data().precio, stock: element.data().stock, };
+        return { id: element.id, name: element.data().name, category: element.data().category, precio: element.data().precio, stock: element.data().stock, pictureUrl: element.data().pictureUrl, };
       });
 
    

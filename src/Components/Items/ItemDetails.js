@@ -9,8 +9,7 @@ export default function ItemDetail({ producto }) {
     function onAdd(quantity) {
       addItem(producto, quantity);
     }
-
-
+   
     return (
         <div style={{ border: "2px solid pink", margin: "10px", padding:"10px" }}>
             {producto.id ? (

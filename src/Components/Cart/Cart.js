@@ -44,14 +44,14 @@ const Cart = () => {
                                     <td><img src={item.pictureUrl} alt={item.name} width={64} /></td>
                                     <td className="align-middle">{item.name}</td>
                                     <td className="align-middle">{item.stock}</td>
-                                    <td className="align-middle">${item.stock * item.precio}</td>
+                                    <td className="align-middle">USD {item.precio}</td>
                                     <td className="text-end align-middle"><button><Link onClick={() => {removeItem(item.id)}} className="botoncart" title="Eliminar Producto"><img src={DeleteProduct} alt={"Eliminar Producto"} className="deleteboton" width={32} />Eliminar Producto</Link></button></td>
                                 </tr>
                             ))}
                             <tr>
                                 <td colSpan={2}>&nbsp;</td>
                                 <td className="align-middle">Suma Total</td>
-                                <td className="align-middle"><b>${sumTotal()}</b></td>
+                                <td className="align-middle"><b>USD {sumTotal()}</b></td>
                                 <td className="text-end"><button><Link to={"/checkout"} className="botoncart"  title="Finalizar Compra">Finalizar Compra</Link></button></td>
                             </tr>
                         </tbody>

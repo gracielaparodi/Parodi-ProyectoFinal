@@ -9,7 +9,7 @@ export default function ItemList({ Items }) {
         <Container>
              <Row>
   
-        <div style={{ border: "2px solid salmon", margin: "10px",  }}>
+        <div style={{ border: "2px solid salmon", margin: "10px",display: "inline"  }}>
             {!Items.length && <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>}
             {Items.map((item) => (
                 <Item producto={item} />

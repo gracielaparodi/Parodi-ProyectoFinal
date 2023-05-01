@@ -38,7 +38,7 @@ export default function ItemListContainer({ Bienvenidos }) {
   }, [idcategory]);
 
     return (
-        <div style={{ border: "2px solid pink", margin: "10px" }}>
+        <div style={{ border: "2px solid pink", margin: "10px", }}>
             <ItemList Items={Items} />
         </div>
     );

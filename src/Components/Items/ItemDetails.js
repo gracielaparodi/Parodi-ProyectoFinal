@@ -11,10 +11,10 @@ export default function ItemDetail({ producto }) {
     }
    
     return (
-        <div style={{ border: "2px solid pink", margin: "10px", padding:"10px" }}>
+        <div style={{ border: "2px solid pink", margin: "10px", padding:"10px", display: "inline-block"}}>
             {producto.id ? (
                 <>
-                    <img src={producto.pictureUrl}  alt={producto.name} />
+                    <img src={producto.pictureUrl}  alt={producto.name} height={"275px"} />
                     <br /> <br />
                     {producto.name}
                     <br />

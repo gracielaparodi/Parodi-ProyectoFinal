@@ -33,6 +33,8 @@ To run tests, run the following command
 
 https://smoonstore.netlify.app/
 
+![](https://github.com/gracielaparodi/Parodi-ProyectoFinal/blob/master/screencast-smoonstore.netlify.app-2023.05.01-21_30_47.gif)
+
 
 - 👨‍💻 All of my projects are available at [https://github.com/gracielaparodi](https://github.com/gracielaparodi)
 - 📫 How to reach me **gracielaparodi@gmail.com**

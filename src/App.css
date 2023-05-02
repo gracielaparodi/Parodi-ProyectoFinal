@@ -196,6 +196,7 @@ p {
 .backgroundhome {background-image: url(https://firebasestorage.googleapis.com/v0/b/smoon-store.appspot.com/o/background2.webp?alt=media&token=23f7cc6e-25d4-4c1f-a3cf-f08efb70a23b);
 position: sticky;}
 
+
 .botoncart {
   text-decoration: none;
   color: white;
@@ -212,5 +213,62 @@ position: sticky;}
 .deleteboton {margin-right: 10px;}
 
 
+body {
+  padding: 0;
+  margin: 0;
+  
+}
 
 
+.nav-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #031D44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.nav-link-fade-up::before {
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.nav-link-grow-up::before {
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+  height: 5px;
+}

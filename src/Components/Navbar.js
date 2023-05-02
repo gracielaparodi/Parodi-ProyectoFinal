@@ -16,20 +16,20 @@ const NavBar = ({color}) => {
         <div style={{ backgroundColor: color }}>
 
 
-<Navbar expand="xxl">
+<Navbar expand="xxl" >
                <Container  className="justify-content-end">
               
                     <Navbar.Brand as={Link} to="/"> <img src={logo} className="App-logo" alt="logo" width={100} /></Navbar.Brand>
                     <Nav>
-                    <Nav.Link  as={Link} to="/category/Anime">Anime</Nav.Link>
-                    <Nav.Link  as={Link} to="/category/Manga">Manga</Nav.Link>
-                    <Nav.Link  as={Link} to="/category/Merch">Merch</Nav.Link>
+                    <Nav.Link className="nav-links nav-link-ltr"  as={Link} to="/category/Anime">Anime</Nav.Link>
+                    <Nav.Link className="nav-links nav-link-ltr"  as={Link} to="/category/Manga">Manga</Nav.Link>
+                    <Nav.Link className="nav-links nav-link-ltr"  as={Link} to="/category/Merch">Merch</Nav.Link>
                     </Nav>
                     </Container>
                     <Container  className="justify-content-end">
                     <Nav>
-                    <Nav.Link  as={Link} to="/category/Login">Login</Nav.Link>
-                    <Nav.Link  as={Link} to="/category/Register">Register</Nav.Link> 
+                    <Nav.Link className="nav-links nav-link-ltr"   as={Link} to="/category/Login">Login</Nav.Link>
+                    <Nav.Link className="nav-links nav-link-ltr"   as={Link} to="/category/Register">Register</Nav.Link> 
                     </Nav> 
                    
                     <Form className="d-flex">

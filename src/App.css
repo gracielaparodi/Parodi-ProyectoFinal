@@ -224,7 +224,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-decoration: none;
-  color: #031D44;
+  color: #3d222c;
   padding: 20px 0px;
   margin: 0px 20px;
   display: inline-block;
@@ -234,6 +234,8 @@ body {
 
 .nav-link:hover {
   opacity: 1;
+  color: #a85e79
+
 }
 
 .nav-link::before {

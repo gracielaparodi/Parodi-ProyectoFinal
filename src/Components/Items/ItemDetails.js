@@ -18,7 +18,7 @@ export default function ItemDetail({ producto }) {
                     <br /> <br />
                     {producto.name}
                     <br />
-                    PRECIO: {producto.precio}
+                    PRECIO: USD {producto.precio}
                     <br />
                     STOCK: {producto.stock}
                     <br />
